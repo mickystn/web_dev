@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script>
+    function checkPassword() {
+        var passInput = document.getElementById('pass1')
+        var pass = passInput.value
+
+        var cpassInput = document.getElementById('pass2')
+        var cpass = cpassInput.value
+
+        var vali = document.getElementById("errormsg")
+        if(pass == cpass){
+            vali.innerHTML = "Correct"
+            vali.style.color = "green"
+        }
+        else{
+            vali.innerHTML = "Incorrect"
+            vali.style.color = "red"
+
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Register</h1>
+    Username: <input type="text"><br>
+    Password: <input type="text" id="pass1"><br>
+    Re-type Password: <input type="text" id="pass2"><br>
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>
+</html>

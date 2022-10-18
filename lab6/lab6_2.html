@@ -1,0 +1,20 @@
+<html>
+<head>
+    <style>
+        .NameGreen{
+            color:green
+        }
+    </style>
+<script>
+    function changeGreen(id){
+        var NAME = document.getElementById(id)
+        NAME.className = "NameGreen" 
+    }
+</script>
+</head>
+<body>
+Name: <input type="text" id="name"  onmouseleave="changeGreen(id)"><br>
+Age: <input type="text" id="age"  onmouseleave="changeGreen(id)"><br>
+Birthdate: <input type="text" id="birth" onmouseleave="changeGreen(id)"><br>
+</body>
+</html>
